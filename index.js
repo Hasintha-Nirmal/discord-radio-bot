@@ -17,9 +17,8 @@ const {
   StreamType,
 } = require("@discordjs/voice");
 const { spawn } = require("child_process");
-const ffmpegPath = require("ffmpeg-static");
-
-// Set FFMPEG_PATH so any voice internal utilities locate ffmpeg-static
+// Determine FFmpeg binary: prioritize process.env.FFMPEG_PATH (e.g. in Docker), fallback to ffmpeg-static or 'ffmpeg'
+const ffmpegPath = process.env.FFMPEG_PATH || require("ffmpeg-static") || "ffmpeg";
 process.env.FFMPEG_PATH = ffmpegPath;
 
 // ─── Station Data ───────────────────────────────────────────────────────────

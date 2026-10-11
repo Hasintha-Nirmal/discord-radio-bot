@@ -1,21 +1,27 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Stage 1: Build dependencies
 # ─────────────────────────────────────────────────────────────────────────────
-FROM node:18-alpine AS builder
+FROM node:22-alpine AS builder
 
 WORKDIR /usr/src/app
 
-# Copy package files and install production dependencies only
+# Install build dependencies for native modules if needed
+RUN apk add --no-cache python3 make g++
+
+# Copy package files and install production dependencies
 COPY package*.json ./
-RUN npm ci --only=production
+RUN npm install --omit=dev --no-audit --no-fund
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Stage 2: Runtime image
 # ─────────────────────────────────────────────────────────────────────────────
-FROM node:18-alpine
+FROM node:22-alpine
 
-# Install FFmpeg and Python (needed for some native addons)
-RUN apk add --no-cache ffmpeg python3 make g++
+# Install FFmpeg for high-performance audio transcoding
+RUN apk add --no-cache ffmpeg
+
+ENV FFMPEG_PATH=/usr/bin/ffmpeg
+ENV NODE_ENV=production
 
 WORKDIR /usr/src/app
 
@@ -26,10 +32,12 @@ COPY --from=builder /usr/src/app/node_modules ./node_modules
 COPY . .
 
 # Non-root user for security
-RUN addgroup -g 1001 -S botgroup && adduser -S botuser -u 1001 -G botgroup
+RUN addgroup -g 1001 -S botgroup && adduser -S botuser -u 1001 -G botgroup \
+    && chown -R botuser:botgroup /usr/src/app
+
 USER botuser
 
-# Health check — ensures the process is running
+# Health check — ensures node process runs cleanly
 HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=3 \
   CMD node -e "console.log('ok')" || exit 1
 
