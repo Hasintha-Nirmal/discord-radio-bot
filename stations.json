@@ -1,0 +1,90 @@
+{
+  "hiru": {
+    "name": "Hiru FM",
+    "frequency": "100.9 FM",
+    "url": "https://radio.lotustechnologieslk.net:2020/stream/hirufmgarden",
+    "fallback_url": "https://radio.lotustechnologieslk.net:2020/stream/hirufmgarden/stream/1/",
+    "color": "#E63946",
+    "emoji": "🔴",
+    "image": "https://upload.wikimedia.org/wikipedia/en/8/8b/Hiru_FM_logo.png",
+    "genre": "Sinhala Pop / Entertainment",
+    "website": "https://www.hirufm.lk"
+  },
+  "sirasa": {
+    "name": "Sirasa FM",
+    "frequency": "99.7 FM",
+    "url": "http://live.trusl.com:1170/;",
+    "fallback_url": "http://65.108.8.106:8080/radio/8020/radio.mp3",
+    "color": "#457B9D",
+    "emoji": "🔵",
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/6a/Sirasa_FM_logo.png",
+    "genre": "Sinhala / News / Pop",
+    "website": "https://sirasafm.lk"
+  },
+  "neth": {
+    "name": "Neth FM",
+    "frequency": "97.4 FM",
+    "url": "https://cp11.serverse.com/proxy/nethfm/stream",
+    "fallback_url": "https://stream.zeno.fm/b2873w98wd8uv?zs=7EAdoLV8R5-8bQA2jb7k2A",
+    "color": "#2D6A4F",
+    "emoji": "🟢",
+    "image": "https://upload.wikimedia.org/wikipedia/en/0/0c/Neth_FM_Sri_Lanka_logo.jpg",
+    "genre": "Sinhala / Culture / Folk",
+    "website": "https://nethfm.lk"
+  },
+  "gold": {
+    "name": "Gold FM",
+    "frequency": "89.0 FM",
+    "url": "https://radio.lotustechnologieslk.net:2020/stream/goldfmgarden",
+    "fallback_url": "https://radio.lotustechnologieslk.net:8000/",
+    "color": "#FFB703",
+    "emoji": "🟡",
+    "image": "https://www.goldfm.lk/images/lllistenlivelogo.jpg",
+    "genre": "Classic Hits / Retro / 80s 90s",
+    "website": "https://www.goldfm.lk"
+  },
+  "shaa": {
+    "name": "Shaa FM",
+    "frequency": "101.0 FM",
+    "url": "https://radio.lotustechnologieslk.net:2020/stream/shaafmgarden",
+    "fallback_url": "https://stream.zeno.fm/ypykn98ufq8uv",
+    "color": "#9B5DE5",
+    "emoji": "🟣",
+    "image": "https://www.shaafm.lk/images/logo.png",
+    "genre": "Sinhala / Hip Hop / Urban",
+    "website": "https://www.shaafm.lk"
+  },
+  "sun": {
+    "name": "Sun FM",
+    "frequency": "98.9 FM",
+    "url": "https://radio.lotustechnologieslk.net:2020/stream/sunfmgarden",
+    "fallback_url": "https://radio.lotustechnologieslk.net:2020/stream/sunfmgarden?icy=https",
+    "color": "#E76F51",
+    "emoji": "☀️",
+    "image": "https://www.sunfm.lk/assets/images/liveradio/logo.png",
+    "genre": "English / Top 40 / Dance Hits",
+    "website": "https://www.sunfm.lk"
+  },
+  "sooriyan": {
+    "name": "Sooriyan FM",
+    "frequency": "93.3 FM",
+    "url": "https://radio.lotustechnologieslk.net:8006/",
+    "fallback_url": "https://stream.zeno.fm/x2wr1xgqf08uv?zs=8Y4wNQMhRnSE6k2t",
+    "color": "#F4A261",
+    "emoji": "🟠",
+    "image": "https://www.sooriyanfm.lk/images/logo.png",
+    "genre": "Tamil / Indian Pop / Hits",
+    "website": "https://www.sooriyanfm.lk"
+  },
+  "kiss": {
+    "name": "Kiss FM",
+    "frequency": "96.9 FM",
+    "url": "https://srv02.onlineradio.voaplus.com/kissfm",
+    "fallback_url": "https://stream-32.zeno.fm/xekhrn4zetzuv",
+    "color": "#E91E63",
+    "emoji": "💋",
+    "image": "https://kissfm.lk/kisslogo.png",
+    "genre": "English / Pop / EDM",
+    "website": "https://kissfm.lk"
+  }
+}
