@@ -68,23 +68,111 @@
   "sooriyan": {
     "name": "Sooriyan FM",
     "frequency": "93.3 FM",
-    "url": "https://radio.lotustechnologieslk.net:8006/",
-    "fallback_url": "https://stream.zeno.fm/x2wr1xgqf08uv?zs=8Y4wNQMhRnSE6k2t",
+    "url": "https://radio.lotustechnologieslk.net:8006/;stream.mp3",
+    "fallback_url": "http://sooriyanfm.asiabroadcasting.stream:7071/;",
     "color": "#F4A261",
     "emoji": "🟠",
     "image": "https://www.sooriyanfm.lk/images/logo.png",
     "genre": "Tamil / Indian Pop / Hits",
     "website": "https://www.sooriyanfm.lk"
   },
-  "kiss": {
-    "name": "Kiss FM",
-    "frequency": "96.9 FM",
-    "url": "https://srv02.onlineradio.voaplus.com/kissfm",
-    "fallback_url": "https://stream-32.zeno.fm/xekhrn4zetzuv",
-    "color": "#E91E63",
-    "emoji": "💋",
-    "image": "https://kissfm.lk/kisslogo.png",
-    "genre": "English / Pop / EDM",
-    "website": "https://kissfm.lk"
+  "yfm": {
+    "name": "Y FM",
+    "frequency": "92.7 FM",
+    "url": "http://live.trusl.com:1180/;",
+    "fallback_url": "http://76.164.217.100:7036/stream",
+    "color": "#00B4D8",
+    "emoji": "🎯",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Y_FM_Sri_Lanka_logo.png/200px-Y_FM_Sri_Lanka_logo.png",
+    "genre": "Sinhala / Youth / Chart Hits",
+    "website": "https://www.yfmradio.lk"
+  },
+  "vfm": {
+    "name": "V FM",
+    "frequency": "107.0 FM",
+    "url": "http://live.trusl.com:1150/;",
+    "fallback_url": "http://live.trusl.com:8022/;",
+    "color": "#8338EC",
+    "emoji": "🟤",
+    "image": "https://www.vfmradio.lk/images/logo.png",
+    "genre": "Sinhala / Music / Entertainment",
+    "website": "https://www.vfmradio.lk"
+  },
+  "yesfm": {
+    "name": "Yes FM",
+    "frequency": "101.0 FM",
+    "url": "http://live.trusl.com:1190/;",
+    "fallback_url": "http://76.164.217.100:7030/;",
+    "color": "#06D6A0",
+    "emoji": "✅",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e6/Yes_FM_Sri_Lanka_logo.png/200px-Yes_FM_Sri_Lanka_logo.png",
+    "genre": "English / Contemporary Hits / Pop",
+    "website": "https://www.yesfmonline.com"
+  },
+  "shakthi": {
+    "name": "Shakthi FM",
+    "frequency": "105.8 FM",
+    "url": "http://live.trusl.com:1160/;",
+    "fallback_url": "https://stream.zeno.fm/shakthifm",
+    "color": "#EF233C",
+    "emoji": "⚡",
+    "image": "https://shakthifm.com/images/logo.png",
+    "genre": "Tamil / Hits / Entertainment",
+    "website": "https://shakthifm.com"
+  },
+  "slbc_national": {
+    "name": "Radio Ceylon",
+    "frequency": "97.4 FM (SLBC Asia Service)",
+    "url": "http://220.247.227.20:8000/RSLstream",
+    "fallback_url": "http://220.247.227.6:8000/Asiastream",
+    "color": "#1D3557",
+    "emoji": "🏛️",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Sri_Lanka_Broadcasting_Corporation_%28SLBC%29_logo.png/200px-Sri_Lanka_Broadcasting_Corporation_%28SLBC%29_logo.png",
+    "genre": "SLBC / Public Broadcasting / National",
+    "website": "https://www.slbc.lk"
+  },
+  "slbc_sinhala_national": {
+    "name": "SLBC Sinhala National Service",
+    "frequency": "Swadeshiya Sevaya",
+    "url": "http://220.247.227.6:8000/Snsstream",
+    "fallback_url": "http://220.247.227.20:8000/RSLstream",
+    "color": "#2B4162",
+    "emoji": "🇱🇰",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Sri_Lanka_Broadcasting_Corporation_%28SLBC%29_logo.png/200px-Sri_Lanka_Broadcasting_Corporation_%28SLBC%29_logo.png",
+    "genre": "SLBC / Sinhala / News / Culture",
+    "website": "https://www.slbc.lk"
+  },
+  "slbc_commercial": {
+    "name": "SLBC Sinhala Commercial",
+    "frequency": "Welenda Sevaya",
+    "url": "http://220.247.227.6:8000/Scomstream",
+    "fallback_url": "http://220.247.227.20:8000/RSLstream",
+    "color": "#E9C46A",
+    "emoji": "📻",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Sri_Lanka_Broadcasting_Corporation_%28SLBC%29_logo.png/200px-Sri_Lanka_Broadcasting_Corporation_%28SLBC%29_logo.png",
+    "genre": "SLBC / Sinhala / Commercial / Music",
+    "website": "https://www.slbc.lk"
+  },
+  "slbc_tamil": {
+    "name": "SLBC Tamil National Service",
+    "frequency": "Tamil National Service",
+    "url": "http://220.247.227.6:8000/Tnsstream",
+    "fallback_url": "http://220.247.227.6:8000/Yaalstream",
+    "color": "#F4A261",
+    "emoji": "🎙️",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Sri_Lanka_Broadcasting_Corporation_%28SLBC%29_logo.png/200px-Sri_Lanka_Broadcasting_Corporation_%28SLBC%29_logo.png",
+    "genre": "SLBC / Tamil / News / Culture",
+    "website": "https://www.slbc.lk"
+  },
+  "slbc_thendral": {
+    "name": "SLBC Thendral FM",
+    "frequency": "Tamil Commercial Service",
+    "url": "http://220.247.227.20:8000/Threndralstream",
+    "fallback_url": "http://220.247.227.6:8000/Tnsstream",
+    "color": "#E76F51",
+    "emoji": "🌸",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Sri_Lanka_Broadcasting_Corporation_%28SLBC%29_logo.png/200px-Sri_Lanka_Broadcasting_Corporation_%28SLBC%29_logo.png",
+    "genre": "SLBC / Tamil / Commercial / Music",
+    "website": "https://www.slbc.lk"
   }
 }
